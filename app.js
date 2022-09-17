@@ -17,7 +17,7 @@ const chatRoutes = require('./routes/chat')
 const authRoutes = require('./routes/auth')
 
 const BOTNAME = 'Gist Bot'
-const MongoDbURI = 'mongodb+srv://Orero:orero2002@cluster0.zf1ulpl.mongodb.net/chatApp?retryWrites=true&w=majority'
+const MongoDbURI = 'MONGODBURL'
 const PORT = 8080 || process.env.PORT
 
 const app = express()
