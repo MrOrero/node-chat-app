@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/tailwindstyle.css">
+    <title>Gist Bot</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+        <!-- Flex container -->
+        <!-- <div class="flex flex-col items-center justify-between"></div> -->
+        <div class="flex items-center justify-between">
+            <div class="pt-2">
+                <img src="img/chat-logo.png" class= "max-h-10" alt="logo">
+            </div>
+            <!-- Menu Items -->
+            <!-- <div class="flex space-x-6"> -->
+            <div class="hidden sm:flex flex-1 justify-end items-center space-x-6 text-xs mr-6 lg:mr-20">
+                <button type="button" class="bg-red-500 rounded-md px-5 py-2 text-white">
+                    <a href="/signup" class="hover:text-sky-800">SIGN UP</a>
+                </button>
+                <button type="button" class="bg-red-500 rounded-md px-5 py-2 text-white">
+                    <a href="/login" class="hover:text-sky-800">LOGIN</a>
+                </button>
+            </div>
+            <div class="flex sm:hidden flex-1 justify-end">
+                <i class="text-2xl fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>  
+    <!-- Hero Section -->
+    <section class="relative">
+        <div class="relative container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-20">
+            <!-- Content -->
+            <div class="flex flex-1 flex-col items-center lg:items-start ml-6 lg:ml-14">
+                <h2 class="text-blue-900 text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
+                    Chat Application
+                </h2>
+                <p class="text-gray-500 text-lg text-center lg:text-left mb-6">
+                    Gist with People on rooms and dm them (Will change this later)
+                </p>
+                <div class="flex justify-center flex-wrap gap-6">
+                    <button type="button" class="bg-red-500 rounded-md px-5 py-2 text-white"> 
+                        <a href="/signup" class="hover:text-sky-800">SIGN UP</a>
+                    </button>
+                    <button type="button" class="bg-red-500 rounded-md px-5 py-2 text-white"> 
+                        <a href="/login" class="hover:text-sky-800">LOGIN</a>
+                    </button>
+                </div>
+            </div>
+            <!-- Image -->
+            <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 lg:mr-14 z-10">
+                <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full lg:mr-12" src="img/hero-bg.png" alt="" >
+            </div>
+        </div>
+    </section>
+</body>
+</html>

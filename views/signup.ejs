@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/tailwindstyle.css">
+    <title>SIGN UP</title>
+</head>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+        <!-- Flex container -->
+        <!-- <div class="flex flex-col items-center justify-between"></div> -->
+        <div class="flex items-center justify-between">
+            <div class="pt-2">
+                <a href="/">
+                    <img src="/img/chat-logo.png"  class= "max-h-10" alt="logo">
+                </a>
+            </div>
+            <!-- Menu Items -->
+            <!-- <div class="flex space-x-6"> -->
+            <div class="hidden sm:flex flex-1 justify-end items-center space-x-6 text-xs lg:mr-52 md:mr-40">
+                <button type="button" class="bg-red-500 rounded-md px-5 py-2 text-white">
+                    <a href="/login" class="hover:text-sky-800">LOGIN</a>
+                </button>
+            </div>
+            <div class="flex sm:hidden flex-1 justify-end">
+                <i class="text-2xl fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>  
+    
+    <body>
+        <section class="relative">
+            <div class="relative container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-10">
+                <!-- Content -->
+                <div class="flex flex-1 flex-col items-center lg:items-start ml-6 lg:ml-14">
+                    <h2 class="text-blue-900 text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
+                        Chat Application
+                    </h2>
+                    <p class="text-gray-500 text-lg text-center lg:text-left mb-6">
+                        Gist with People on rooms and dm them (Will change this later)
+                    </p>
+                    <div class="flex justify-center flex-wrap gap-6">
+                        <button type="button" class="bg-red-500 rounded-md px-5 py-2 text-white"> 
+                            <a href="/login" class="hover:text-sky-800">LOGIN</a>
+                        </button>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 lg:mx-20"></div>
+                    <div class="form-wrap">
+                        <h1>SIGN <span>UP</span></h1>
+                        <h6>Welcome to ShatApp</h6>
+                        <form class="form" action="/signup" method="POST">
+                            <input type="text" name="username" id="username" placeholder="Username">
+                             </br>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                             </br>
+                            <input type="password" name="password" id="pass" placeholder="Password">
+                             </br>
+                            <input type="password" name="confirmPassword" id="cpass" placeholder="Confirm Password">
+                             </br>
+                            <button type="submit" class="form-btn">SIGN UP</button>
+                        </form>
+                        <br>
+                        <a href="/login" class="ml-12 text-slate-300">Already registered? Login</a>
+                        <!-- <span class="sign-up-with">Or sign up with</span> -->
+                        <!-- <div class="social-logo">
+                             <a href="#" title="Facebook">
+                                 <img src="images/fb.png" alt="Facebook">
+                             </a>
+                             <a href="#" title="Google">
+                                 <img src="images/google.png" alt="Google">
+                             </a>
+                             <a href="#" title="Twitter">
+                                 <img src="images/twitter.png" alt="Twitter">
+                             </a>
+                            </div>
+                        </div> -->
+                </div>
+            </div>
+        </section>
+    
+    </body>
+</html>
